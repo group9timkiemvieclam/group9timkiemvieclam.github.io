@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tuyển Hồ Sơ</title>
-</head>
-<body>
-    <h1>Tuyển Hồ Sơ</h1>
-    <form>
-        <label for="fullname">Full Name:</label><br>
-        <input type="text" id="fullname" name="fullname"><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-
-        <label for="resume">Upload Resume:</label><br>
-        <input type="file" id="resume" name="resume"><br><br>
-
-        <label for="message">Additional Information:</label><br>
-        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
+    <meta name="viewport" content="width=device-width">
+    <title>Contact Form</title>
+    <style>
+        body{
+            background-color: rgb(87, 117, 117);
+            width: 100%;
+            margin: 15px;
+            text-align: center;
+        }
+        input, textarea, button {
+            font-size: 20px;
+            padding: 10px;
+            border: none;
+        }
+    </style>
+    </head>
+    <body>
+        <h1>Hồ sơ tuyển dụng</h1>
+        <form method="post">
+            <input name="Họ và Tên" type="text" placeholder="Họ và Tên" required/>
+            <input name="email" type="email" placeholder="email" required/>
+            <input name="số điện thoại và địa chỉ" type="thông tin liên lạc và địa chỉ" placeholder="thông tin liên lạc và địa chỉ" required/>
+        </form>
+        <h1>Tuyển dụng Shipper</h1>
+        <a href="https://www.canva.com/design/DAGA3CgBeLs/rjKlLAAfXRsHhmxto24XSw/edit">Visit our website</a>
+    </div>
 </body>
 </html>
