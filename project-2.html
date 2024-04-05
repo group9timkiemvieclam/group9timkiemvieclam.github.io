@@ -8,16 +8,139 @@
 </head>
 <body>
   <div id="top-bar"></div> 
-  <html></html>{
-    margin: 0;
-    padding: 0;
-    font-family: 'Helvetica' , 'Arial'; /* initial font */
-  } 
-  #top-bar {
-    width: 100%;
-    background: #F1F1F1; /*light <gray></gray>
-    border-bottom: 1px solid #D4D4D4; /* dark gray "underline"*/
-    height: 25px
-  }
+  <style> 
+   html, body { 
+    margin: 0; 
+    padding: 0; 
+    font-family: 'Helvetica', 'Arial';
+}
+#top-bar { 
+    width: 100%; 
+    background: #F1F1F1; 
+    border-bottom: 1px solid #D4D4D4; 
+    height: 25px;
+}
+ </style> 
+ <div class="normal-wrapper">
+ </div>
+ <style>
+  .normal-wrapper { 
+    width: 900px; 
+    margin: 0 auto; 
+    padding: 15px 40px; 
+    background: rgb(115, 115, 187); 
+    overflow: auto;
+}
+ </style>
+ <div id="logo-container"> 
+  <i class="fa fa-volume-down logo-icon"></i> <h1>TÌM KIẾM VIỆC LÀM</h1>
+</div>
+<style>
+  .logo-icon { 
+    color: #000000; 
+    font-size: 60pt; 
+    float: left;
+}
+h1 { 
+    float: left; 
+    margin: 21px 0 0 25px;
+}
+</style>
+<ul id="navbar"> 
+  <li><a href="">Home</a></li> 
+  <li><a href="">About</a></li> 
+  <li><a href="">Reviews</a></li> 
+  <li><a href="" class="last-link" >Contact</a></li>
+</ul>
+<style>
+  #navbar { 
+    list-style-type: none; 
+    margin: 29px 0 0 0; 
+    padding: 0; float: right; 
+    font-size: 16pt;
+}
+#navbar li { 
+    display: inline; 
+}
+#navbar li a:link, #navbar li a:visited, #navbar li a:active { 
+    text-decoration: none; 
+    color: #000000; 
+    padding: 0 16px 0 10px; 
+    margin: 0; 
+    border-right: 2px solid #B4B4B4;
+}
+#navbar li a:link.last-link { 
+    
+    border-right: 0px;
+}
+#navbar li a:hover { 
+   
+    color: #EB6361;
+}
+</style>
+<div id="top-color-splash"></div>
+<style>
+  #top-color-splash { 
+    width: 100%; 
+    height: 4px; 
+    background: #EB6361;
+}
+</style>
+<div class="normal-wrapper"> 
+  <div class="icon-outer"> 
+      <div class="icon-circle"> 
+          <i class="fa fa-youtube logo-icon"></i> 
+      </div> 
+      <h5>NHÂN VIÊN KẾ TOÁN</h5> 
+      <p>Là vị trí đòi hỏi có chuyên môn, được đào tạo về chuyên ngành, do đó, đơn vị tuyển kế toán thường yêu cầu những tiêu chí cơ bản sau</p> 
+  </div>
+</div>
+</div>
+<div class="icon-outer"> 
+    <div class="icon-circle"> 
+        <i class="fa fa-camera-retro logo-icon"></i> 
+    </div> 
+    <h5>Nhân viên quảng cáo</h5> 
+    <p>Là lên kế hoạch quảng bá sản phẩm để tăng độ nhận diện thương hiệu và mang sản phẩm tới gần hơn với người tiêu dùng.</p> 
+</div>
+<div class="icon-outer"> 
+    <div class="icon-circle"> 
+        <i class="fa fa-dollar logo-icon"></i> 
+    </div> 
+    <h5>Nhân viên tiếp thị</h5> 
+    <p> là vị trí công việc có nhiệm vụ giới thiệu sản phẩm, dịch vụ tới khách hàng, khiến khách hàng biết</p>  
+ </div>
+</div>
+<style>
+.icon-outer { 
+    box-sizing: border-box; /* ensure padding and borders do not increase the size */ 
+    float: left; 
+    width: 33.33%; 
+    padding: 25px; 
+    margin: 0; 
+    text-align: center;
+}
+.icon-circle { 
+    background: #EEEEEE; 
+    color: #B4B4B4; 
+    width: 200px; 
+    height: 200px; 
+    border-radius: 200px; /* make rounded corners */ 
+    margin: 0 auto; 
+    border: 2px solid #D6D6D6; 
+    box-sizing: border-box; /* ensure padding and borders do not increase the size */ 
+    font-size: 75pt; 
+    padding: 30px 0 0 0; 
+    cursor: pointer;
+}
+.icon-circle:hover { 
+    /* change color on hover (mouseover) */ 
+    color: #FFFFFF; 
+    background: #EB6361;}
+h5 { 
+    margin: 15px 0 10px 0; 
+    font-size: 20pt;
+}
+</style>
 </body>
 </html>
