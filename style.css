@@ -67,6 +67,6 @@ body{
 }
 .contact-right{
     display: flex;
-    width: 325px;
-    height:325px;
+    width: 250px;
+    height:250px;
 }
