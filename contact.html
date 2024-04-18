@@ -2,29 +2,28 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
-    <style>
-        body{
-            background-color: aqua;
-            width: 100%;
-            margin: 15px;
-            text-align: center;
-        }
-        input, textarea, button {
-            font-size: 20px;
-            padding: 10px;
-            border: none;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>TÌM KIẾM VIỆC LÀM</h1>
-    <form method="post">
-        <input name="name" type="text" placeholder="Name" required/>
-        <input name="email" type="email" placeholder="ABC@gmail.com" required/>
-        <textarea name="message" rows="5" cols="30" placeholder="Message"></textarea>
-        <button type="submit">CONTACT US</button>
-    </form>
+    <div class="Contact-container">
+        <form action=""  class="contact-left">
+            <div class="contact-left-title">
+                <h2>CONTACT US</h2>
+                <hr>
+            </div>
+            <label>Full Name:</label>
+                <input type="text" name="name" placeholder="Full name" class="contact-inputs"required><br>
+            <label>Email:</label>
+                <input type="email" name="email" placeholder="Email" class="contact-inputs"required><br>
+            <label>Message:</label>
+                <textarea name="message" placeholder="Message" class="contact-inputs"></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contact-right">
+            <img scr="https://i.pinimg.com/564x/08/3f/15/083f1577e9007ade707ec7a3ec6a3e78.jpg" alt=""/>
+        </div>
+    </div>
 </body>
 </html>
