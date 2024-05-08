@@ -3,11 +3,11 @@
 :root{
    --main-color:#e56825;
    --red:#e74c3c;
-   --orange:#f39c12;
+   --orange:#e56825;
    --light-color:#888;
-   --light-bg:#e8bb95;
-   --black:#2c3e50;
-   --white:#e8bb95;
+   --light-bg:#ffffff;
+   --black:#000000;
+   --white:#ffffff;
    --border:.1rem solid rgba(0,0,0,.2);
 }
 
