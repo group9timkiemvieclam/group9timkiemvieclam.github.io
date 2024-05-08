@@ -8,7 +8,6 @@ body{
     background-image:white;    
 }
 .Contact-container{
-    height: 81vh;
     display:flex;
     align-items:center;
     justify-content:space-evenly;
