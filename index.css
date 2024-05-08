@@ -8,10 +8,11 @@ body{
     background-image:white;    
 }
 .Contact-container{
-    height: 100vh;
+    height: 81vh;
     display:flex;
     align-items:center;
     justify-content:space-evenly;
+    margin-right: 200px;
 }
 .contact-left{
     display: flex;

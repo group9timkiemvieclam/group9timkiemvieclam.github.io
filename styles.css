@@ -21,11 +21,17 @@ header {
 	margin: 0px;
 	padding: 25px;
 }
-
+.magazine-layout {
+	column-count: 3;
+	column-width: 300px ;
+	column-gap: 20px;
+	column-fill: balance;
+	length: auto;
+}
 img {
+
     width: 100%;
     height: 100%;
-    object-position: auto;
   }
 .job-listing {
 	background-color: #f2f2f2;
@@ -51,3 +57,5 @@ img {
 .learn-more-button:hover {
 	background-color: #3e8e41;
 }
+
+
