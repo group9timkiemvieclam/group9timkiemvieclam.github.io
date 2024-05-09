@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  
+  .container {
+    padding: 0 12rem;
+  }
+  
+  .header__container {
+    position: relative;
+    background-color: #fa6d86;
+    color: #fff;
+    height: 4rem;
+    display: flex;
+    padding: .5rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .header__search-bar {
+    background-color: #fd8fa3;
+    color: #fff;
+    width: 20rem;
+    padding: .8rem;
+    border-radius: 2rem;
+    display: flex;
+    gap: .8rem;
+  }
+  
+  .header__search-bar.focus {
+    background-color: #fff;
+  }
+  
+  .header__search-bar input {
+    background: transparent;
+    border: none;
+    width: 100%;
+  }
+  
+  .header__search-bar input::placeholder {
+    color: #fff;
+  }
+  
+  .header__search-bar input:focus {
+    outline: none;
+  }
+  
+  .header__navbar {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .header__navbar__item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    cursor: pointer;
+  }
+  
+  .header__navbar__item:hover {
+    color: #fff !important;
+    transition: all .2s ease-in;
+  }
+  
+  .header__navbar__item:nth-child(5):hover {
+    color: tomato !important;
+  }
+  
+  .header__navbar__item:nth-child(5) {
+    display: block;
+    text-align: center;
+    padding-left: 1.8rem;
+    border-left: 1px solid #fff;
+  }
+  
+  .header__navbar__item:nth-child(5)>p:nth-child(2) {
+    font-size: .8rem;
+  }
+  
+  .header__navbar__item:nth-child(2),
+  .header__navbar__item:nth-child(3),
+  .header__navbar__item:nth-child(4),
+  .header__navbar__item:nth-child(5) {
+    color: #fff;
+  }
+  
+  .header__navbar__profile {
+    display: flex;
+    gap: 1rem;
+    border: 1px solid #fff;
+    border-radius: 4rem;
+    padding: .3rem;
+  }
+  
+  .header__navbar__profile>div {
+    padding: .6rem;
+    background: #fd8fa3;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #fd8fa3 !important;
+  }
+  
+  .header__navbar__profile>div:hover {
+    background-color: #fd8fa3 !important;
+    border: 2px solid #fd8fa3 !important;
+    transition: all .2s ease-in;
+  }
+  
+  .profile {
+    display: none;
+    background-color: #ffdad5;
+    position: absolute;
+    right: .5rem;
+    top: 5.5rem ;
+    box-shadow: .3rem .3rem 1rem #000;
+    border-radius: 1rem;
+    padding: 1rem;
+  }
+  
+  .profile.active {
+    display: block;
+    transition: all .2s ease-in;
+  }
+  
+  .btn.btn-primary {
+    border-radius: .6rem;
+    background-color: #fd8fa3;
+    color: #fff;
+    border: none;
+    padding: .3rem .7rem;
+    margin-bottom: .5rem;
+  }
+  
+  .company-card {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    width: 12rem;
+    padding: 1.2rem;
+    border-radius: .5rem;
+  }
+  
+  .company-card:hover {
+    border: 1px solid tomato;
+    color: tomato;
+  }
+  
+  .job-card {
+    display: flex;
+    border: 1px solid grey;
+    width: 30rem;
+    border-radius: .5rem;
+    padding: 1rem;
+  }
+  
+  .job-card .job-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .job-card .job-info a {
+    text-decoration: none;
+  }
+  
+  .job-card .job-info a:hover {
+    color: tomato;
+    transition: all .2s ease-in;
+  }
+  
+  span.salary {
+    color: tomato;
+  }
+  
+  .job-card .company-logo {
+    width: 6rem;
+    margin-right: .4rem;
+    padding: 1rem;
+  }
+  
+  .job-card .company-logo img {
+    width: 100%;
+  }
+  
+  .job-card:hover {
+    background-color: rgb(249, 251, 255);
+    border: 1px solid rgb(207, 224, 255);
+    transition: all .2s ease-in;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .footer__container {
+    background: #fa6d86;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .2rem;
+    padding: 2rem;
+  }
