@@ -3,68 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giao diện mạng xã hội</title>
+    <title>Profile</title>
     <style>
-        body{
-            float: left;
-            border: 0cap;
-            margin: auto;
-            color: #7c5621;
+        /* CSS đặc tả kiểu dáng */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .left, .right {
+            flex: 1;
+            padding: 20px;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
             width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
-        .left {
-            float: left;
-            width: 25%;
-            height: 1000px;
-            margin-left: 7%;
-            margin-top: 5%;
-            background-color: rgb(206, 172, 128);
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
-        h2{
-            text-align: center;
-            font-feature-settings: "falt";
+        button:hover {
+            background-color: #45a049;
         }
-        p{
-            width: 80%;
-            margin-left: 10%;
+        p {
+            margin-bottom: 10px;
         }
-        .right {
-            float: left;
-            width: 60%;
-            height: 1000px;
-            margin-right: 7%;
-            margin-top: 5%;
-            background-color: rgb(213, 203, 190);
-            border-left: 3px solid #9d8058;
+        .section-title {
+            background-color: #362610;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+        }
+        .section-content {
+            padding: 10px;
         }
     </style>
 </head>
 <body>
-    <div>
+    <h2>Hồ Sơ</h2>
+    <div class="container">
         <div class="left">
-            <img src="./img/avatar.jpg" alt="" width="100%" height="200px">
-            <h2>HỌ VÀ TÊN</h2>
-            <div>
-                <p>Thông Tin Giới Thiệu Về Bản Thân</p>
-                <p>Số Điện Thoại:</p>
-                <p>Gmail:</p>   
+            <form action="#" method="post" enctype="multipart/form-data">
+                <input type="file" name="avatar" accept="image/*"><br>
+                <input type="text" name="full_name" required placeholder="Họ và Tên"><br>
+                <input type="text" name="intro" required placeholder="Thông tin giới thiệu bản thân"><br>
+                <input type="text" name="phone" required placeholder="Số Điện Thoại"><br>
+                <input type="text" name="email" required placeholder="Gmail"><br>
+                <button type="submit">Lưu</button>
+            </form>
+            <div class="section-title">Kinh nghiệm làm việc</div>
+            <div class="section-content">
+                <form action="#" method="post">
+                    <input type="text" name="job_experience" required placeholder="Thông tin kinh nghiệm làm việc"><br>
+                    <button type="submit">Lưu</button>
+                </form>
             </div>
-            <div style="border-top: 3px solid #9d8058;">
-                <h2>Kinh nghiệm làm việc</h4>
-            </div>
-            <div style="border-top: 3px solid #9d8058;">
-                <p>Có kinh nghiệm về việc làm</p>
-                <p>Kinh nghiệm giao tiếp</p>
-                <p>Kinh nghiệm thuyết trình</p>
-                <p>Kỹ năng giải quyết vấn đề</p>
-                <p>Kỹ năng tin học văn phòng</p>
-            </div>
-            <div style="border-top: 3px solid #9d8058;">
-                <h2>Học Vấn</h4>
-            </div>
-            <div style="border-top: 3px solid #9d8058;">
-                <p>Yêu cầu có bằng Cử nhân Quản trị Kinh doanh, Marketing hoặc lĩnh vực liên quan; Ưu tiên có bằng thạc sĩ.</p>
-                <p>Cần có ít nhất 10 năm kinh nghiệm trong lĩnh vực marketing và lập kế hoạch dài hạn.</p>
+            <div class="section-title">Học Vấn</div>
+            <div class="section-content">
+                <form action="#" method="post">
+                    <input type="text" name="education" required placeholder="Thông tin học vấn"><br>
+                    <button type="submit">Lưu</button>
+                </form>
             </div>
         </div>
         <div class="right">
@@ -73,41 +99,25 @@
                 <p>Số điện thoại: 0912 3456 789</p>
                 <p>Email: xinchao@gmail.com</p>
             </div>
-            <div style="height: 40px; background-color: #362610;font-size: 25px; color: white;">
-                <h3 style="margin-left: 10%; margin-top: 2%;">Kỹ năng chuyên môn</h3>
+            <div class="section-title">Kỹ năng chuyên môn</div>
+            <div class="section-content">
+                <form action="#" method="post">
+                    <input type="text" name="Skill" required placeholder="Kĩ năng công việc"><br>
+                    <button type="submit">Lưu</button>
+                </form>
             </div>
-            <div>
-                <div>
-                    <p>Marketing Director:</p>
-                </div>
-                <div>
-                    <p>- Quản lý đội ngũ, đưa ra yêu cầu và phản hồi về hiệu suất của các chiến dịch truyền thông</p>
-                    <p>- Phát triển plans and marketing budgets</p>
-                    <p>- Giám sát hiệu suất của các chiến dịch marketing và thực hiện các điều chỉnh khi cần thiết</p>
-                </div>
-                <div>
-                    <p>Nhiệm vụ:</p>
-                </div>
-                <div>
-                    <p>- Chỉ đạo và thực hiện các hoạt động quảng cáo và promotion của thương hiệu.</p>
-                    <p>- Phân tích thị trường mục tiêu để xác định và đề xuất các phương hướng marketing hiệu quả.</p>
-                    <p>- Xác định các phân khúc thị trường mới được hưởng lợi từ các sản phẩm của công ty.</p>
-                    <p>- Chuẩn bị các chiến dịch quảng cáo hiệu quả dựa trên nghiên cứu thị trường.</p>
-                    <p>- Liên tục cập nhật các kiến thức về các sản phẩm và dịch vụ mới nổi</p>
-                    <p>- Phối hợp với các giám đốc điều hành cấp cao để phát triển các kế hoạch tăng trưởng</p>
-                </div>
-                <div>
+            <div class="section-title">Ngôn Ngữ </div>
+            <div class="section-content">
+                <form action="#" method="post">
+                    <input type="text" name="language" required placeholder="Thành thạo những ngôn ngữ nào"><br>
+                    <button type="submit">Lưu</button>
+                </form>
             </div>
-            <div style="height: 40px; background-color: #362610;font-size: 25px; color: white;">
-                <h3 style="margin-left: 10%; margin-top: 2%;">Những lợi ích hấp dẫn</h3>
-            </div>
-            <div>
-                <div>
-                    <p>- Khóa học ngắn về Marketing Director.</p>
-                    <p>- Lương từ 30 triệu đến 70 triệu VNĐ/tháng.</p>
-                    <p>- Thời gian làm tự do.</p>
-                </div>
-            </div>
+        </div>
+    </div>
+</body>
+</html>
+
         </div>
     </div>
 </body>
