@@ -1,84 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Danh sách việc làm</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Trang chủ</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-	<header>
-        <h1>Tìm Kiếm Việc Làm</h1>
-    </header>
-    <main>
-        <section id="search-section">
-            <form action="#">
-                <input type="text" placeholder="Tìm kiếm công việc" required>
-                <input type="text" placeholder="Địa điểm" required>
-                <button type="submit">Search</button>
-            </form>
-        </section>
-		
 
-	<div class="job-listing-container">
-		<h1>Danh sách việc làm</h1>
-		<div class="magazine-layout">
-		<div class="job-listing">
-            <img src="https://www.careerlink.vn/image/88972cafd4e2c87410d1fb0947ffa598.jpg" alt="Job 1">
-			<h2>Chuyên Viên Tài Chính</h2>
-			<p>Công ty CPPT & ĐT Xây dựng Vincons</p>
-			<p>Địa điểm : Hà Nội, Việt Nam</p>
-			<p>Thời gian: Full-time</p>
-			<p>Lương: 25 - 30 triệu/ tháng</p>
-			<a href="#" class="learn-more-button">Tìm hiểu thêm</a>
-		</div>
-		<div class="job-listing">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs81lcNnVVHzbJjGWBUa_uGYFA_VRrYf67nakrnR7kRg&s.jpg" alt="Job 2">
-			<h2>Finance Speciallist (for Fresh Graduate)</h2>
-			<p>Công Ty TNHH Công nghệ Huawei Việt Nam</p>
-			<p>Địa điểm: 33F, Keangnam Landmark 72, Nam Tu Liem, Hanoi</p>
-			<p>Thời gian: Part-time</p>
-			<p>Lương: 27 - 35 triệu/tháng</p>
-			<a href="#" class="learn-more-button">Tìm hiểu thêm</a>
-		</div>
-		<div class="job-listing">
-            <img src="https://media.licdn.com/dms/image/C4E0BAQFmSAuf98vk2w/company-logo_200_200/0/1631311426865?e=2147483647&v=beta&t=gnCuX9Wq9X6r-0B3eB1u2_0qrDYOH7G3ozq6SG5UCcE" alt="Job 3">
-			<h2>Content Writer</h2>
-			<p>Công Ty TNHH Onpoint</p>
-			<p>Địa điểm: Ho Chi Minh, Vietnam</p>
-			<p>Thời giam: Internship</p>
-			<p>Lương: 15 - 27 triệu/ tháng</p>
-			<a href="#" class="learn-more-button">Tìm hiểu thêm</a>
-		</div>
-        <div class="job-listing">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX0y7CVHx0yFHUltoBuXWe-BJrgIfWvLhWSlYwMclOnw&s" alt="Job 4">
-			<h2>Copywriter</h2>
-			<p>Traveloka- Successful Starup</p>
-			<p>Địa điểm: Hồ Chí Minh, Việt Nam</p>
-			<p>Thời gian: Full time</p>
-			<p>Lương: 10 - 15 triệu/ tháng</p>
-			<a href="#" class="learn-more-button">Tìm hiểu thêm</a>
-		</div>
-        
-        <div class="job-listing">
-            <img src="https://vcdn-kinhdoanh.vnecdn.net/2020/02/28/logo-Cityland-ko-text-5277-1582857378.jpg" alt="Job 5">
-			<h2>Giám đốc Marketing</h2>
-			<p>Công Ty TNHH Đầu Tư Địa Ốc Thành Phố</p>
-			<p>Địa điểm: 68 Phan Văn Trị, Phường 5, Quận Gò Vấp</p>
-			<p>Thời gian: Full time</p>
-			<p>Lương : 30- 35 triệu/ tháng</p>
-			<a href="#" class="learn-more-button">Tìm hiểu thêm</a>
-		</div>
-        <div class="job-listing">
-            <img src="https://cdn.nhanlucnganhluat.vn/uploads/images/917C8B7D/logo/2018-12/logo.jpg" alt="Job 6">
-			<h2>Marketing Director</h2>
-			<p>Công Ty Cổ Phần Kềm Nghĩa</p>
-			<p>Địa điểm: 307H Nguyễn Văn Trỗi, Phường 1, Quận Tân Bình, Tp HCM</p>
-			<p>Thời gian: Tự do</p>
-			<p>Salary: 26 - 32 triệu/ tháng</p>
-			<a href="#" class="learn-more-button">Tìm hiểu thêm</a>
-		</div>
-		</div>
-	</div>
+<header class="header">
+   
+   <section class="flex">
+
+      <a href="home.html" class="logo">Find Work</a>
+
+      <form action="search.html" method="post" class="search-form">
+         <input type="text" name="search_box" required placeholder="Tìm kiếm....." maxlength="100">
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+
+      <div class="icons">
+         <div id="menu-btn" class="fas fa-bars"></div>
+         <div id="search-btn" class="fas fa-search"></div>
+         <div id="user-btn" class="fas fa-user"></div>
+         <div id="toggle-btn" class="fas fa-sun"></div>
+      </div>
+
+      <div class="profile">
+         <img src="images/pic-1.jpg" class="image" alt="">
+         <h3 class="name">Nguyễn Văn A</h3>
+         <p class="role">Thành viên</p>
+         <a href="profile.html" class="btn">Hồ sơ người dùng</a>
+         <div class="flex-btn">
+            <a href="login.html" class="option-btn">Đăng nhập</a>
+            <a href="register.html" class="option-btn">Đăng ký</a>
+         </div>
+      </div>
+
+   </section>
+
+</header>   
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-1.jpg" class="image" alt="">
+      <h3 class="name">Nguyễn Văn A</h3>
+      <p class="role">Thành viên</p>
+      <a href="profile.html" class="btn">Hồ sơ người dùng</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>Trang chủ</span></a>
+      <a href="jobs.html"><i class="fas fa-graduation-cap"></i><span>Việc làm</span></a>
+      <a href="contactform.html"><i class="fas fa-headset"></i><span>Thông tin liên hệ</span></a>
+   </nav>
+
+</div>
+
+<section class="jobs">
+
+   <h1 class="heading">Việc làm</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         <div class="tutor">
+            <div class="info">
+               <h3>Nhân viên Part time</h3>
+               <span>THE PIZZA COMPANY</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-1.png" alt="">
+            <span>Hà Nội</span>
+         </div>
+         <h3 class="title">22-23 nghìn VND/giờ</h3>
+         <a href="job-detail-1.html" class="inline-btn">Chi tiết</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <div class="info">
+               <h3>Nhân viên Part time</h3>
+               <span>LOTTE CINEMA</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-2.png" alt="">
+            <span>Huế</span>
+         </div>
+         <h3 class="title">20-22 nghìn VND/giờ</h3>
+         <a href="job-detail-2.html" class="inline-btn">Chi tiết</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <div class="info">
+               <h3>Lập trình viên Back-end</h3>
+               <span>VIETTEL</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-3.png" alt="">
+            <span>Hà Nội</span>
+         </div>
+         <h3 class="title">12-15 triệu VND/Tháng</h3>
+         <a href="job-detail-3.html" class="inline-btn">Chi tiết</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <div class="info">
+               <h3>Trưởng phòng thương mại điện tử</h3>
+               <span>THỜI TRANG LINING</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-4.png" alt="">
+            <span>Hà Nội</span>
+         </div>
+         <h3 class="title">38-50 tr VND/ Tháng </h3>
+         <a href="job-detail-4.html" class="inline-btn">Chi tiết</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <div class="info">
+               <h3>Nhân viên tư vấn bán hàng</h3>
+               <span>CELLPHONES</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-5.jpg" alt="">
+            <span>Hà Nội</span>
+         </div>
+         <h3 class="title">7-12 triệu/tháng</h3>
+         <a href="job-detail-5.html" class="inline-btn">Chi tiết</a>
+      </div>
+
+      <div class="box">
+         <div class="tutor">
+            <div class="info">
+               <h3>Nhân viên CSKH Online</h3>
+               <span>FPT TELECOM</span>
+            </div>
+         </div>
+         <div class="thumb">
+            <img src="images/thumb-6.png" alt="">
+            <span>Đà Nẵng</span>
+         </div>
+         <h3 class="title">13-15 triệu/tháng</h3>
+         <a href="job-detail-6.html" class="inline-btn">Chi tiết</a>
+      </div>
+
+   </div>
+
+   <div class="more-btn">
+      <a href="jobs.html" class="inline-option-btn">Hiện toàn bộ</a>
+   </div>
+
+</section>
+<script src="script.js"></script>
+
+   
 </body>
 </html>
